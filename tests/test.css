@@ -1,0 +1,15 @@
+#main{
+    margin:auto;
+    width:500px;
+    height:200px;
+    background: lightgray;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+span{
+    color:black;
+    background: dodgerblue;
+
+
+}
