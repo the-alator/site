@@ -1,0 +1,90 @@
+/*body > *{
+     border: 1pt dashed grey;
+ }*/
+* {
+    font-family: Georgia;
+}
+
+.siteSection{
+    margin:auto;
+    max-width: 960px;
+    min-width: 960px;
+    /*border: 1pt dashed grey;*/
+}
+
+.contentSection{
+    margin-top: 60px;
+}
+.elementComplex{
+    border: 1pt dashed red;
+    margin-top: 40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+hr {
+    max-width: 100%;
+    width:100%;
+    color:grey;
+
+}
+h3{
+    color:#333333;
+}
+.contentElement{
+    border: 1pt dashed blue;
+    max-width:225px;
+    min-width:225px;
+    max-height:305px;
+    min-height:305px;
+}
+.contentElementImg img{
+
+    display: block;
+
+    margin:auto;
+    border: 1pt solid red;
+    position: absolute;  /* подробнее про position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.contentElementImg{
+    position: relative;
+    max-width:225px;
+    min-width:225px;
+    max-height:225px;
+    min-height:225px;
+}
+
+.contentElement:first-child{
+    margin-left: 0px;
+}
+.contentElement:last-child{
+    margin-right: 0px;
+}
+.extremeText{
+    border: 1pt dashed green;
+    max-width:225px;
+    min-width:225px;
+    max-height:40px;
+    min-height:40px;
+    text-align: center;
+}
+.contentElement h4{
+    border: 1pt dashed grey;
+    margin:auto;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+}
+.contentElement span{
+    border: 1pt dashed grey;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+}
