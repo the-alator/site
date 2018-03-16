@@ -8,7 +8,7 @@
 .siteSection{
     margin:auto;
     max-width: 960px;
-    min-width: 960px;
+    min-width: 230px;
     /*border: 1pt dashed grey;*/
 }
 
@@ -16,7 +16,7 @@
     margin-top: 60px;
 }
 .elementComplex{
-    border: 1pt dashed red;
+    /*border: 1pt dashed red;*/
     margin-top: 40px;
     display:flex;
     flex-wrap:wrap;
@@ -32,33 +32,53 @@ h3{
     color:#333333;
 }
 .contentElement{
-    border: 1pt dashed blue;
+    /*border: 1pt dashed blue;*/
     max-width:225px;
     min-width:225px;
+
+    background:#eeeeee;
+}
+.contentElement > * {
+	max-width:225px;
+    min-width:225px;
+}
+#project .contentElement{
     max-height:305px;
     min-height:305px;
 }
-.contentElementImg img{
+#blog .contentElement{
+    max-height:275px;
+    min-height:275px;
+}
+#about .contentElement{
+    max-height:275px;
+    min-height:275px;
+}
+ .contentElementImg img{
 
     display: block;
 
     margin:auto;
-    border: 1pt solid red;
-    position: absolute;  /* подробнее про position: absolute; */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    /*border: 1pt solid red;*/
+
     max-width: 100%;
     max-height: 100%;
 }
-.contentElementImg{
+#project .contentElementImg{
+
     position: relative;
     max-width:225px;
     min-width:225px;
     max-height:225px;
     min-height:225px;
+}
+
+#blog .contentElementImg{
+    position: relative;
+    max-width:225px;
+    min-width:225px;
+    max-height:125px;
+    min-height:125px;
 }
 
 .contentElement:first-child{
@@ -67,24 +87,40 @@ h3{
 .contentElement:last-child{
     margin-right: 0px;
 }
+#project .contentElement > *{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .extremeText{
-    border: 1pt dashed green;
-    max-width:225px;
-    min-width:225px;
+    /*border: 1pt dashed green;*/
+    max-width:100%;
     max-height:40px;
     min-height:40px;
     text-align: center;
+
 }
-.contentElement h4{
-    border: 1pt dashed grey;
-    margin:auto;
-    text-align: center;
-    height:40px;
-    line-height: 40px;
+#blog{
+    max-width: 715px;
 }
-.contentElement span{
-    border: 1pt dashed grey;
-    text-align: center;
-    height:40px;
-    line-height: 40px;
+#about{
+    max-width: 255px;
 }
+#blog .contentElement > *{
+	border: 1px solid red;
+}
+.blogHeaderText{
+	margin-top:15px;
+	min-height:20px;
+	max-height:20px;
+}
+.blogDataText{
+	min-height:15px;
+	max-height:15px;
+}
+.blogMainTest{
+	margin-top:10px;
+	min-height:90px;
+	max-height:90px;
+}	
+
