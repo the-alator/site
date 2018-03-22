@@ -1,6 +1,11 @@
 /*body > *{
      border: 1pt dashed grey;
  }*/
+
+
+/* General site styles ////////////////////////////////////////////*/
+
+
 * {
     font-family: Georgia;
 }
@@ -11,86 +16,160 @@
     min-width: 230px;
     /*border: 1pt dashed grey;*/
 }
+#content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .contentSection{
     margin-top: 60px;
 }
-.elementComplex{
-    /*border: 1pt dashed red;*/
-    margin-top: 40px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-}
 hr {
     max-width: 100%;
     width:100%;
-    color:grey;
+    color:#d8d8d8;
 
 }
 h3{
     color:#333333;
 }
+
+
+/* Header styles ////////////////////////////////////////////////////*/
+
+
+header{
+    height:auto;
+    /*border: 10px solid olivedrab;*/
+}
+#top-header{
+    /*border: 10px solid black;*/
+    max-height:100px;
+    min-height:100px;
+    max-width:100%;
+    min-width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#logo{
+    max-height:100%;
+    display:inline-block;
+}
+.elements-set{
+    margin:0;
+    height:100px;
+    width:auto;
+    display:inline-flex;
+
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#top-header > *{
+    border:1px dashed green;
+}
+.top-header-element{
+    padding:2vw;
+}
+
+.bottom-header-content .imgDiv img{
+    border-radius: 100%;
+    border: 25px solid #7e5c88;
+}
+#bottom-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#bottom-header > .imgDiv{
+    max-width:80px;
+    min-width:80px;
+}
+#bottom-header .imgDiv{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textComplex{
+    padding-right: 50px;
+}
+#bottom-header .textComplex p{
+    padding-bottom: 30px;
+}
+
+#readMore{
+    background: #7e5c88;
+    border-radius: 25px;
+    padding: 13px;
+}
+
+
+/* Common content styles ////////////////////////////////////////////*/
+
+
+.elementComplex{
+    /*border: 1pt dashed red;*/
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
 .contentElement{
     /*border: 1pt dashed blue;*/
+    margin-top: 40px;
     max-width:225px;
     min-width:225px;
-
-    background:#eeeeee;
+    margin-right: 0;
+    margin-left: 0;
 }
-.contentElement > * {
-	max-width:225px;
-    min-width:225px;
-}
-#project .contentElement{
-    max-height:305px;
-    min-height:305px;
-}
-#blog .contentElement{
-    max-height:275px;
-    min-height:275px;
-}
-#about .contentElement{
-    max-height:275px;
-    min-height:275px;
-}
- .contentElementImg img{
-
-    display: block;
-
-    margin:auto;
-    /*border: 1pt solid red;*/
-
-    max-width: 100%;
-    max-height: 100%;
-}
-#project .contentElementImg{
-
-    position: relative;
-    max-width:225px;
-    min-width:225px;
-    max-height:225px;
-    min-height:225px;
-}
-
-#blog .contentElementImg{
-    position: relative;
-    max-width:225px;
-    min-width:225px;
-    max-height:125px;
-    min-height:125px;
-}
-
 .contentElement:first-child{
     margin-left: 0px;
 }
 .contentElement:last-child{
     margin-right: 0px;
 }
+.contentElement > * {
+	max-width:100%;
+    min-width:100%;
+}
+.contentElementImg img{
+
+    display: block;
+
+    margin:auto;
+    /*border: 1pt solid red;*/
+}
+
+
+
+/* Project styles ////////////////////////////////////////////*/
+
+#project{
+    flex-grow:4;
+}
+#project .contentElement{
+    max-height:305px;
+    min-height:305px;
+    background:#eeeeee;
+}
 #project .contentElement > *{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+#project .contentElementImg{
+    max-height:225px;
+    min-height:225px;
 }
 .extremeText{
     /*border: 1pt dashed green;*/
@@ -100,27 +179,120 @@ h3{
     text-align: center;
 
 }
+
+
+
+/* Blog styles ////////////////////////////////////////////*/
+
 #blog{
     max-width: 715px;
+    flex-grow:3;
 }
-#about{
-    max-width: 255px;
+#blog .contentElement{
+    max-height:275px;
+    min-height:275px;
 }
-#blog .contentElement > *{
-	border: 1px solid red;
+
+#blog .contentElementImg{
+    max-height:125px;
+    min-height:125px;
 }
-.blogHeaderText{
-	margin-top:15px;
-	min-height:20px;
-	max-height:20px;
+.blogHeaderText h4{
+    margin-top:15px;
+    margin-bottom: 5px;
+    font-size:1em;
 }
+
 .blogDataText{
-	min-height:15px;
-	max-height:15px;
+    min-height:15px;
+    max-height:15px;
+    font-size:0.8em;
 }
 .blogMainTest{
-	margin-top:10px;
-	min-height:90px;
-	max-height:90px;
-}	
+    margin-top:10px;
+    min-height:90px;
+    max-height:90px;
+    font-size:0.9em;
+}
 
+
+/* About styles ////////////////////////////////////////////*/
+
+
+#about{
+    max-width: 225px;
+    min-width: 225px;
+    /*border:1px solid black;*/
+    flex-grow:1;
+}
+
+#about .contentElement{
+    max-height:275px;
+    min-height:275px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size:15px;
+}
+
+.person{
+    max-height:80px;
+    min-height:80px;
+    max-width:100%;
+    min-width:100%;
+    border: 1px dashed gold;
+    display: flex;
+    align-items: center;
+}
+#about .textComplex{
+    border: 1px dashed green;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*width:150px;*/
+    max-height:75px;
+    min-height:75px;
+}
+#about .imgDiv{
+    max-height:60px;
+    min-height:60px;
+    max-width:60px;
+    min-width:60px;
+    margin-right: 10px;
+    display:inline-flex;
+    align-items: center;
+    border:1px solid #d8d8d8;
+}
+#about img{
+    display:block;
+    margin:auto;
+}
+#about h6{
+    margin:0px;
+    font-size:15px;
+}
+#about span{
+    display:block;
+}
+
+
+@media (max-width: 700px) {
+    #logo{
+        display:none;
+    }
+    .elements-set{
+        margin:auto;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .top-header-element{
+        padding:1.5vw;
+    }
+}
+@media (min-width: 1900px) {
+    .top-header-element{
+        padding:1vw;
+    }
+}
