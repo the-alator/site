@@ -52,7 +52,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 
 }
 #logo{
@@ -60,20 +60,21 @@ header{
     display:inline-block;
 }
 .elements-set{
-    margin:0;
+    /*margin:0;*/
     height:100px;
-    width:auto;
+    width:70%;
     display:inline-flex;
 
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
+
 }
 #top-header > *{
-    border:1px dashed green;
+    /*border:1px dashed green;*/
 }
 .top-header-element{
-    padding:2vw;
+    /*padding:10%;*/
 }
 
 .bottom-header-content .imgDiv img{
@@ -85,20 +86,24 @@ header{
     justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 40px;
+    /*border:1px dashed green;*/
 }
 #bottom-header > .imgDiv{
-    max-width:80px;
-    min-width:80px;
+    /*max-width:80px;*/
+    /*min-width:80px;*/
+    /*border:1px dashed red;*/
 }
 #bottom-header .imgDiv{
     display:inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .bottom-header-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .textComplex{
     padding-right: 50px;
@@ -232,7 +237,7 @@ header{
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    font-size:15px;
+    font-size:13px;
 }
 
 .person{
@@ -240,12 +245,12 @@ header{
     min-height:80px;
     max-width:100%;
     min-width:100%;
-    border: 1px dashed gold;
+    /*border: 1px dashed gold;*/
     display: flex;
     align-items: center;
 }
 #about .textComplex{
-    border: 1px dashed green;
+    /*border: 1px dashed green;*/
     display:inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -261,7 +266,7 @@ header{
     margin-right: 10px;
     display:inline-flex;
     align-items: center;
-    border:1px solid #d8d8d8;
+    /*border:1px solid #d8d8d8;*/
 }
 #about img{
     display:block;
@@ -269,30 +274,58 @@ header{
 }
 #about h6{
     margin:0px;
-    font-size:15px;
+    font-size:12px;
 }
 #about span{
     display:block;
 }
 
 
+/* Footer styles ////////////////////////////////////////////*/
+
+
+#footer .contentElement{
+    max-height:300px;
+    min-height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size:13px;
+}
+#footer .contentElement{
+    margin-top:0px;
+}
+
 @media (max-width: 700px) {
-    #logo{
-        display:none;
-    }
+
     .elements-set{
         margin:auto;
     }
 }
+@media (max-width: 900px) {
+    #logo{
+        display:none;
+    }
 
-
-@media (min-width: 1300px) {
-    .top-header-element{
-        padding:1.5vw;
+    .bottom-header-content {
+        flex-wrap: wrap;
+    }
+    .elements-set{
+        margin:auto;
+        width:90%;
     }
 }
-@media (min-width: 1900px) {
-    .top-header-element{
-        padding:1vw;
-    }
-}
+
+/*@media (min-width: 1300px) {*/
+    /*.top-header-element{*/
+        /*padding:1.5vw;*/
+    /*}*/
+
+
+/*}*/
+/*@media (min-width: 1900px) {*/
+    /*.top-header-element{*/
+        /*padding:1vw;*/
+    /*}*/
+
+/*}*/
