@@ -283,7 +283,14 @@ header{
 
 /* Footer styles ////////////////////////////////////////////*/
 
-
+#footer.contentSection{
+    margin-top:0;
+}
+#footer {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
 #footer .contentElement{
     max-height:300px;
     min-height:300px;
@@ -294,6 +301,20 @@ header{
 }
 #footer .contentElement{
     margin-top:0px;
+}
+#footer .contentElement > *{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .elementComplex{
+    margin-top: 40px;
+    max-width:225px;
+    min-width:225px;
+    margin-right: 0;
+    margin-left: 0;
+    background: #eeeeee;
 }
 
 @media (max-width: 700px) {
